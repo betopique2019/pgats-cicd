@@ -12,10 +12,10 @@ steps:
       versionSpec: '18.x'
     displayName: 'Instalar Node.js'
 
-  - script: npm install
+  - script: yarn install
     displayName: 'Instalar dependências'
 
-  - script: npm test
+  - script: yarn test
     displayName: 'Executar testes'
 
   - task: PublishTestResults@2
